@@ -14,4 +14,4 @@
 4. 后台使用spring+spring mvc+mybatis框架。
 ### 项目截图展示：
 1. 主界面：
-* ![Image text](https://github.com/KiritoSun/SSM-ShopProject/blob/master/ShopImg/index.JPG?raw=true)
+  ![Image text](https://github.com/KiritoSun/SSM-ShopProject/blob/master/ShopImg/index.JPG?raw=true)
