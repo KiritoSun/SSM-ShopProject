@@ -31,4 +31,7 @@
 6. 订单界面：
 ***
   ![Image text](https://github.com/KiritoSun/SSM-ShopProject/blob/master/ShopImg/order.JPG?raw=true)
+7. 后台管理界面：
+***
+  ![Image text](https://github.com/KiritoSun/SSM-ShopProject/blob/master/ShopImg/admin.JPG?raw=true)
 
