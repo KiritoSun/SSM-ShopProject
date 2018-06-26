@@ -1,0 +1,73 @@
+.shop-goodsList{
+	position: absolute;
+	width: 840px;
+	height: 300px;
+	border-radius: 10px;
+	/*border: 1px solid #F0F0F0;*/
+	top: 200px;
+	left: 80px;
+}
+.shop-goodsList-title{
+	position: relative;
+	width: 100%;
+	height: 40px;
+	table-layout: fixed;
+	font-size: 12px;
+	border-bottom: 1px solid #F0F0F0;
+}
+.shop-goodsList-title span{
+	position: relative;
+	color: #F0F0F0;
+	margin-left: 15px;
+	top: 8px;
+	font-weight: bolder;
+}
+.shop-goodsList-title span a{
+	color: #F0F0F0;
+}
+.shop-goodsList-title span a:hover{
+	color: #4d96ff;
+}
+.shop-goodsList-body{
+	position: relative;
+	width: 100%;
+	height: 260px;
+}
+.shop-item2{
+	position: relative;
+	top: 22px;
+	float: left;
+	width: 150px;
+	height: 210px;
+	border: 1px solid white;
+	margin-right: 55px;
+	margin-bottom: 20px;
+	background-color: #fff;
+	cursor: pointer;
+	transition: border 0.5s;
+}
+.shop-item2:hover{
+	/*box-shadow: 0 0 10px #0a67a3;*/
+	border: 1px solid #808080;
+}
+.shop-item2-img{
+	position: relative;
+	width: 148px;
+	height: 148px;
+	margin:1px;
+}
+.shop-item2-name{
+	position: relative;
+	font-size: 11px;
+	font-weight: bolder;
+	margin-left: 10px;
+	margin-top: 4px;
+	color: #787878;
+}
+.shop-item2-price{
+	position: relative;
+	font-size: 14px;
+	margin-left: 10px;
+	margin-top: 3px;
+	color: #CC3333;
+}

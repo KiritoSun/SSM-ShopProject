@@ -1,0 +1,131 @@
+.shop-goods{
+	position: absolute;
+	width: 780px;
+	height: 350px;
+	top: 210px;
+	left: 140px;
+	/*border: 1px solid #F0F0F0;*/
+}
+.shop-goods img{
+	position: absolute;
+	width: 280px;
+	height: 280px;
+	top: 0px;
+	left: 0px;
+}
+.shop-goods-info{
+	position: absolute;
+	width: 400px;
+	height: 300px;
+	/*border: 1px solid #F0F0F0;*/
+	left: 340px;
+	top: 10px;
+}
+.shop-goods-info img{
+	position: absolute;
+	width: 20px;
+	height: 20px;
+}
+.shop-goods-info-title{
+	position: absolute;
+	left: 24px;
+	font-weight: 700;
+    font-stretch: normal;
+    font-size: 16px;
+    font-family: Arial, "microsoft yahei";
+    color: #ffffff;
+}
+.shop-goods-info-price{
+	position: absolute;
+	font-weight: normal;
+    font-stretch: normal;
+    font-size: 14px;
+    top: 40px;
+    left: 24px;
+    font-family: Arial, "microsoft yahei";
+    color: #ffffff;
+}
+.shop-goods-info-number{
+	position: absolute;
+	font-weight: normal;
+    font-stretch: normal;
+    font-size: 14px;
+    top: 80px;
+    left: 24px;
+    font-family: Arial, "microsoft yahei";
+    color: #ffffff;
+}
+.shop-goods-info-para{
+	position: absolute;
+	font-weight: normal;
+    font-stretch: normal;
+    font-size: 14px;
+    top: 120px;
+    left: 24px;
+    font-family: Arial, "microsoft yahei";
+    color: #ffffff;
+}
+.shop-goods-info-count{
+	position: absolute;
+	width: 300px;
+	height: 60px;
+	font-weight: normal;
+    font-stretch: normal;
+    font-size: 14px;
+    top: 165px;
+    left: 24px;
+    font-family: Arial, "microsoft yahei";
+    color: #ffffff;
+}
+.shop-goods-number{
+	position: absolute;
+	top: -5px;
+	left: 50px;
+	width: 140px;
+	height: 40px;
+}
+.add{
+	width: 30px;
+	height: 30px;
+	float: left;
+	border: 1px solid #ccc;
+	background: #f1f1f1;
+    color: #666;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+}
+.shop-goods-number input[type="text"]{
+	width: 40px;
+	height: 30px;
+	float: left;
+	border: none;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	color: black;
+	text-align: center;
+}
+.shop-goods-number input[type="text"]:focus{
+	outline: none;
+}
+.minus{
+	width: 30px;
+	height: 30px;
+	float: left;
+	border: 1px solid #ccc;
+	background: #f1f1f1;
+    color: #666;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+}
+input[name="addcart"]{
+	position: absolute;
+	top: 225px;
+	left: 20px;
+}
+input[name="payment"]{
+	position: absolute;
+	top: 225px;
+	left: 150px;
+}

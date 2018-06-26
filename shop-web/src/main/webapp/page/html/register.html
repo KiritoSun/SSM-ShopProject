@@ -1,0 +1,61 @@
+<!-- 登录注册部分 -->
+<div class="shop-help">
+    <a class="a-1" href="/">主页</a>
+    <a class="a-1" href="/page/login.jsp">登录</a>
+</div>
+<!-- 贴图部分 -->
+<div class="shop-register-png">
+    <img src="/static/img/png3.png" width="280" height="200"/>
+</div>
+<!-- 注册栏 -->
+<div class="shop-register">
+    <div class="shop-register-top">
+        <div class="shop-point" id="point1">
+            <div class="point-1">
+                <div></div>
+            </div>
+            <span class="point_span1">基本信息</span>
+        </div>
+        <div class="shop-line">
+            <img src="/static/img/next.png" width="40" height="20"/>
+        </div>
+        <div class="shop-point" id="point2">
+            <div class="point-2">
+                <div></div>
+            </div>
+            <span class="point_span2">完善信息</span>
+        </div>
+        <div class="shop-line">
+            <img src="/static/img/next.png" width="40" height="20"/>
+        </div>
+        <div class="shop-point" id="point3">
+            <div class="point-2">
+                <div></div>
+            </div>
+            <span class="point_span2">密码提示</span>
+        </div>
+    </div>
+    <div class="shop-register-bottom">
+        <form action="#" method="POST">
+            <div id="form-1">
+                <input type="text" name="cname" placeholder="账户：" rol="1" class="form-control" /><br/>
+                <input type="password" name="password" placeholder="密码：" rol="2" class="form-control" /><br/>
+                <input type="password" name="repassword" placeholder="密码确认：" rol="3" class="form-control" /><br/>
+                <input type="button" name="next1" value="下一步" class="btn btn-success" rol="4" id="next1" />
+            </div>
+            <div id="form-2">
+                <input type="text" name="name" placeholder="姓名：" rol="1" class="form-control"/><br/>
+                <input type="text" name="phone" placeholder="电话：" rol="2" class="form-control"/><br/>
+                <input type="text" name="address" placeholder="收货地址：" rol="3" class="form-control"/><br/>
+                <input type="button" name="last1" value="上一步" class="btn btn-warning" rol="5" id="last1"/>
+                <input type="button" name="next2" value="下一步" class="btn btn-success" rol="6" id="next2"/>
+            </div>
+            <div id="form-3">
+                <input type="text" name="question" placeholder="密码提示问题：" rol="1" class="form-control"/><br/>
+                <input type="text" name="answer" placeholder="密码提示问题答案：" rol="2" class="form-control"/><br/>
+                <input type="button" name="last2" value="上一步" class="btn btn-warning" rol="5" id="last2"/>
+                <input type="button" name="submit" value="提交" class="btn btn-success" rol="6"/>
+            </div>
+        </form>
+    </div>
+</div>

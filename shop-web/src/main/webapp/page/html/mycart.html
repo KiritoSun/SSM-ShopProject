@@ -1,0 +1,36 @@
+<c:set var="cart" value="${sessionScope.mycart}"/>
+<!-- xx栏 -->
+<div class="shop-card">
+    <table class="table">
+        <thead>
+        <th>&nbsp;选择</th>
+        <th>商品信息</th>
+        <th>价格</th>
+        <th>数量</th>
+        <th>操作</th>
+        </thead>
+        <tbody>
+        <c:forEach var="item" items="${cart}">
+            <tr id="${item.id}">
+                <td name="img">
+                    <input type="checkbox" name="check"/>
+                    <img src="${item.img}" width="40" height="35" />
+                </td>
+                <td name="name"><c:out value="${item.name}"/></td>
+                <td name="price"><c:out value="${item.price}"/></td>
+                <td name="number"><c:out value="${item.number}"/></td>
+                <td><input type="button" name="delete" class="btn btn-danger" value="删除"/></td>
+            </tr>
+        </c:forEach>
+        </tbody>
+        <tfoot>
+        <tr>
+            <td><input type="checkbox" name="allcheck"/>&nbsp;全选</td>
+            <td><input type="button"  name="alldelete" value="删除选中" class="btn btn-danger"></td>
+            <td>总价:</td>
+            <td id="allprice">0</td>
+            <td><input type="button" name="pay" value="去结算" class="btn btn-info"/></td>
+        </tr>
+        </tfoot>
+    </table>
+</div>

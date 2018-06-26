@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 设置为IUserDao接口方法提供sql语句配置 -->
+<mapper namespace="com.zt.dao.OrderDao">
+    <insert id="insertOrder" parameterType="com.zt.pojo.order">
+        INSERT INTO `order` VALUES (#{rid},#{cname},#{ids},#{names},#{price})
+    </insert>
+    <select id="selectOrder" parameterType="String" resultType="com.zt.pojo.order">
+        SELECT * FROM `order` WHERE cname LIKE #{cname}
+    </select>
+    <delete id="deleteOrder" parameterType="String">
+        DELETE FROM `order` WHERE rid=#{rid}
+    </delete>
+</mapper>

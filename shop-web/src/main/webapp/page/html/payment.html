@@ -1,0 +1,36 @@
+<c:set var="custom" value="${sessionScope.custom}"/>
+<c:set var="list" value="${sessionScope.pay}"/>
+<c:set var="allprice" value="${sessionScope.allprice}"/>
+<!-- xx栏 -->
+<div class="shop-pay">
+    收货人姓名：<span><c:out value="${custom.name}"/></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    收获地址：<span><c:out value="${custom.address}"/></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    联系电话：<span><c:out value="${custom.phone}"/></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <table class="table table-bordered">
+        <tbody>
+        <c:forEach items="${list}" var="pay">
+            <tr id="${pay.id}">
+                <td name="img">
+                    <img class="center-block" src="${pay.img}" width="40" height="35" />
+                </td>
+                <td name="name">
+                    <c:out value="${pay.name}"/>
+                </td>
+                <td name="number">
+                    <c:out value="${pay.number}"/>
+                </td>
+                <td name="price">
+                    <c:out value="${pay.price}"/>
+                </td>
+            </tr>
+        </c:forEach>
+        </tbody>
+        <tfoot>
+        <tr>
+            <td class="payfoot" colspan="2">*请仔细核实个人信息,如需修改请单击用户栏修改信息</td>
+            <td>总价：<span id="allprice"><c:out value="${allprice}"/></span></td>
+            <td><input type="button" name="payment" value="立即支付" class="btn btn-info" /></td>
+        </tr>
+        </tfoot>
+    </table>
+</div>

@@ -1,0 +1,17 @@
+.shop-card{
+	position: absolute;
+	width: 840px;
+	height: 300px;
+	border-radius: 10px;
+	top: 185px;
+	left: 80px;
+	color: #ffffff;
+}
+.shop-card table{
+	color: #ffffff;
+	font-size: 14px;
+}
+.shop-card table tr td img{
+	position: relative;
+	margin-left: 40px;
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 设置为IUserDao接口方法提供sql语句配置 -->
+<mapper namespace="com.zt.dao.GoodsListDao">
+    <delete id="clearGoodslist">
+        DELETE FROM goodslist
+    </delete>
+    <insert id="insertGoodslist" parameterType="java.util.List">
+        INSERT INTO goodslist VALUES
+        <foreach collection="list" item="item" index="index" separator=",">
+            (
+            #{item.id},#{item.img},#{item.name},#{item.price}
+            )
+        </foreach>
+    </insert>
+    <insert id="insertGoodslist2" parameterType="com.zt.pojo.goods">
+        INSERT INTO goodslist VALUES (#{id},#{img},#{name},#{price})
+    </insert>
+</mapper>

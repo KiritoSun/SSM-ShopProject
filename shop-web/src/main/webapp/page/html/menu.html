@@ -1,0 +1,10 @@
+<!-- 登录注册部分 -->
+<div class="shop-help">
+    <c:if test="${cname==null}">
+        <a class="a-1" href="/page/login.jsp">登录</a>
+        <a class="a-1" href="/page/register.jsp">注册</a>
+    </c:if>
+    <c:if test="${cname!=null}">
+        <a class="a-2" href="/exit.action">退出登录</a>
+    </c:if>
+</div>

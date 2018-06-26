@@ -1,0 +1,36 @@
+<!-- 用户栏部分 -->
+<div class="shop-user">
+    <div class="shop-user-top">
+        <div class="user-img">
+            <img src="/static/img/user.png" width="25" height="25"/>
+        </div>
+        <div class="user-span">
+            <c:if test="${cname!=null}">
+                欢迎回来：<span id="cname"><c:out value="${cname}"/></span>
+            </c:if>
+            <c:if test="${cname==null}">
+                当前处于游客状态！
+            </c:if>
+        </div>
+    </div>
+    <div class="shop-user-bottom">
+        <ul>
+            <li name="update">
+                <img src="/static/img/my.png" width="15" height="15" />
+                <span>修改信息</span>
+            </li>
+            <li name="cart">
+                <img src="/static/img/shop.png" width="20" height="20" />
+                <span>查看购物车</span>
+            </li>
+            <li name="order">
+                <img src="/static/img/list.png" width="20" height="20" />
+                <span>查看订单</span>
+            </li>
+            <li name="msg">
+                <img src="/static/img/msg.png" width="20" height="20" />
+                <span>联系管理</span>
+            </li>
+        </ul>
+    </div>
+</div>

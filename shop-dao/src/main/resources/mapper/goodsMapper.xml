@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 设置为IUserDao接口方法提供sql语句配置 -->
+<mapper namespace="com.zt.dao.GoodsDao">
+    <select id="selectGoodsByType" parameterType="String" resultType="com.zt.pojo.goods">
+        SELECT * FROM goods WHERE type LIKE #{type}
+    </select>
+    <select id="selectGoodsAll" resultType="com.zt.pojo.goods">
+        SELECT * FROM goods
+    </select>
+    <select id="selectGoodsById" resultType="com.zt.pojo.goods">
+        SELECT * FROM goods WHERE id = #{id}
+    </select>
+    <insert id="insertGoods" parameterType="com.zt.pojo.goods">
+        INSERT INTO goods VALUES (#{id},#{img},#{title},#{info},#{name},#{price},#{stock},#{para},#{type},#{weight})
+    </insert>
+    <delete id="deleteGoods" parameterType="String">
+        DELETE FROM goods WHERE id=#{id}
+    </delete>
+    <update id="addWeight" parameterType="String">
+        UPDATE goods SET weight=weight+1 WHERE id=#{id}
+    </update>
+    <select id="selectGoodsLike" resultType="com.zt.pojo.goods">
+        SELECT * FROM goods WHERE title LIKE #{info} or info LIKE #{info} or name LIKE #{info} or para LIKE #{info} or type LIKE #{info}
+    </select>
+</mapper>

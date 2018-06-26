@@ -1,0 +1,23 @@
+<c:set var="custom" value="${sessionScope.custom}"/>
+<!-- 个人中心 -->
+<div class="userInfo">
+    <div class="userInfo-body">
+        <form action="#">
+            <div class="userInfo-left">
+                <div>姓名：<input type="text" name="name" class="form-control" value="${custom.name}"/></div>
+                <div>电话：<input type="text" name="phone" class="form-control" value="${custom.phone}"/></div>
+                <div>地址：<input type="text" name="address" class="form-control" value="${custom.address}" /></div>
+            </div>
+            <div class="userInfo-right">
+                <div>密码：<input type="text" name="password" class="form-control" value="${custom.password}" /></div>
+                <div>问题：<input type="text" name="question" class="form-control" value="${custom.question}" /></div>
+                <div>答案：<input type="text" name="answer" class="form-control" value="${custom.answer}" /></div>
+            </div>
+            <div class="userInfo-btn">
+                <input type="button" name="restart" value="取消" class="btn btn-default" />
+                &nbsp;&nbsp;&nbsp;
+                <input type="button" name="update" value="保存" class="btn btn-info" />
+            </div>
+        </form>
+    </div>
+</div>

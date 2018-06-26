@@ -1,0 +1,39 @@
+body{
+    background-color: #ffffff;
+}
+.panel-body-right-top{
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    background-color: #E8E8E8;
+    padding: 0;
+    border: 1px solid #E8E8E8;
+    z-index: 10;
+}
+.panel-body-right-top ul{
+    list-style: none;
+    padding:0;
+    /*border: none;*/
+}
+.panel-body-right-top ul li{
+    width: 140px;
+    height: 38px;
+    float: left;
+    padding: 0;
+    margin-left: 15px;
+    line-height: 40px;
+    /*border: 1px solid black;*/
+    padding-left: 20px;
+    cursor: pointer;
+    /*transition: box-shadow 0.5s;*/
+}
+.panel-body-right-top ul li:hover{
+    text-decoration: underline;
+}
+table{
+    position: relative;
+    top: 40px;
+}
+table tbody{
+    font-size: 12px;
+}

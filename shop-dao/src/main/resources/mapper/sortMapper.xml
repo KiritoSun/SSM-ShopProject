@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 设置为IUserDao接口方法提供sql语句配置 -->
+<mapper namespace="com.zt.dao.SortDao">
+    <delete id="clearSort">
+        DELETE FROM sort
+    </delete>
+    <insert id="insertSort" parameterType="java.util.List">
+        INSERT INTO sort VALUES
+        <foreach collection="list" item="item" index="index" separator=",">
+            (
+            #{item.id},#{item.img},#{item.title},#{item.info}
+            )
+        </foreach>
+    </insert>
+</mapper>

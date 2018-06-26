@@ -1,0 +1,21 @@
+<c:set var="goods" value="${sessionScope.goods}"/>
+<!-- 商品详细信息 -->
+<div class="shop-goods" id="${goods.id}">
+    <img src="${goods.img}" class="shop-goods-img" />
+    <div class="shop-goods-info">
+        <img src="/static/img/goods.png" />
+        <span class="shop-goods-info-title"><c:out value="${goods.name}"/></span>
+        <span class="shop-goods-info-price">价格：&nbsp;&nbsp;&nbsp;<span id="price"><c:out value="${goods.price}"/></span></span>
+        <span class="shop-goods-info-number">库存：&nbsp;&nbsp;&nbsp;<span id="count"><c:out value="${goods.stock}"/></span></span>
+        <span class="shop-goods-info-para">参数：&nbsp;&nbsp;&nbsp;<span><c:out value="${goods.para}"/></span></span>
+        <div class="shop-goods-info-count">数量：
+            <div class="shop-goods-number">
+                <div class="add">+</div>
+                <input type="text" value="1" name="number" />
+                <div class="minus">-</div>
+            </div>
+        </div>
+        <input type="button" name="addcart" value="加入购物车" class="btn btn-danger" />
+        <input type="button" name="payment" value="立即购买" class="btn btn-info" />
+    </div>
+</div>

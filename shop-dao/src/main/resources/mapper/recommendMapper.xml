@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 设置为IUserDao接口方法提供sql语句配置 -->
+<mapper namespace="com.zt.dao.RecommendDao">
+    <delete id="clearRecommend">
+        DELETE FROM recommend
+    </delete>
+    <insert id="insertRecommend" parameterType="java.util.List">
+        INSERT INTO recommend VALUES
+        <foreach collection="list" item="item" index="index" separator=",">
+            (
+            #{item.id},#{item.img},#{item.title},#{item.info},#{item.weight}
+            )
+        </foreach>
+    </insert>
+</mapper>

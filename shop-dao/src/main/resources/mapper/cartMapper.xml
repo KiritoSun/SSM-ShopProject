@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 设置为IUserDao接口方法提供sql语句配置 -->
+<mapper namespace="com.zt.dao.CartDao">
+    <insert id="insertCart" parameterType="com.zt.pojo.cart">
+        INSERT INTO cart VALUES (#{cname},#{id},#{img},#{name},#{price},#{number})
+    </insert>
+    <select id="selectCart" resultType="com.zt.pojo.cart">
+        SELECT * FROM cart WHERE cname=#{cname} AND id=#{id}
+    </select>
+    <select id="selectCartByCname" resultType="com.zt.pojo.cart" parameterType="String">
+        SELECT * FROM cart WHERE cname LIKE #{cname}
+    </select>
+    <delete id="deleteCart" parameterType="String">
+        DELETE FROM cart WHERE cname=#{cname} AND id=#{id}
+    </delete>
+</mapper>

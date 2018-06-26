@@ -1,0 +1,39 @@
+<div class="panel-body-right-top">
+    <ul name="custom">
+        <li name="add"><img src="/static/img/add.png" width="20" height="20"/>&nbsp;&nbsp;添加字段</li>
+        <li name="delete"><img src="/static/img/remove.png" width="20" height="20"/>&nbsp;&nbsp;删除字段</li>
+        <li name="update"><img src="/static/img/update.png" width="20" height="20"/>&nbsp;&nbsp;修改字段</li>
+        <li name="refresh"><img src="/static/img/refresh.png" width="20" height="20"/>&nbsp;&nbsp;刷新</li>
+    </ul>
+</div>
+<sql:query dataSource="${snapshot}" var="result">
+    SELECT * from custom;
+</sql:query>
+<table class="table table-bordered table-striped table-hover">
+    <thead>
+    <tr class="alert-info">
+        <td>选择</td>
+        <td>帐户名</td>
+        <td>密码</td>
+        <td>姓名</td>
+        <td>电话</td>
+        <td>收货地址</td>
+        <td>提示问题</td>
+        <td>答案</td>
+    </tr>
+    </thead>
+    <tbody>
+    <c:forEach items="${result.rows}" var="row">
+        <tr id="${row.cname}">
+            <td><input type="checkbox" name="check"/></td>
+            <td name="cname"><c:out value="${row.cname}"/></td>
+            <td name="password"><c:out value="${row.password}"/></td>
+            <td name="name"><c:out value="${row.name}"/></td>
+            <td name="phone"><c:out value="${row.phone}"/></td>
+            <td name="address"><c:out value="${row.address}"/></td>
+            <td name="question"><c:out value="${row.question}"/></td>
+            <td name="answer"><c:out value="${row.answer}"/></td>
+        </tr>
+    </c:forEach>
+    </tbody>
+</table>

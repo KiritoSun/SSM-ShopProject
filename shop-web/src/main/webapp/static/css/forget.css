@@ -1,0 +1,32 @@
+.shop-forget-bottom{
+	position: relative;
+	margin: 0 auto;
+	top: 20px;
+	width: 300px;
+	height: 300px;
+	/*border: 2px solid #F0F0F0;*/
+}
+.cancel{
+	position: absolute;
+	left: -380px;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+}
+.tsubtitle{
+	position: absolute;
+	color: #F0F0F0;
+	border-left: 5px solid #FF6633;
+	padding-left: 15px;
+	left: -320px;
+	top: 40px;
+	font-weight: bolder;
+}
+.shop-forget-bottom label{
+	position: absolute;
+	color: #F0F0F0;
+	top: -20px;
+}
+.shop-forget-bottom input[type="button"]{
+	width: 120px;
+}

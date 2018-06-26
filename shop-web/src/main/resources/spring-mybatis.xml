@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context 
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/mvc
+        http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+    <context:component-scan base-package="com.zt.service"/>
+    <!-- 配置数据库相关参数properties的属性： -->
+    <context:property-placeholder location="classpath:jdbc.properties"/>
+
+    <!-- 数据库连接池 -->
+    <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+        <property name="driverClass" value="${jdbc.driver}"/>
+        <property name="jdbcUrl" value="${jdbc.url}"/>
+        <property name="user" value="${jdbc.username}"/>
+        <property name="password" value="${jdbc.password}"/>
+        <property name="maxPoolSize" value="30"/>
+        <property name="minPoolSize" value="10"/>
+        <property name="autoCommitOnClose" value="true"/>
+        <property name="checkoutTimeout" value="1000"/>
+        <property name="acquireRetryAttempts" value="2"/>
+    </bean>
+    <!-- 配置SqlSessionFactory对象 -->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <!-- 配置数据库连接池 -->
+        <property name="dataSource" ref="dataSource"/>
+        <!-- 加载mybatis配置文件 -->
+        <property name="configLocation" value="classpath:mybatis-config.xml"/>
+        <!-- 扫描domain下的实体,方便在mapper下的xml中使用别名,例如User则会找到me.jinkun.ssm.domain.User -->
+        <property name="typeAliasesPackage" value="com.zt.pojo"/>
+        <!-- 自动扫描mapper下的Xx.xml文件 -->
+        <property name="mapperLocations" value="classpath:mapper/*.xml"/>
+    </bean>
+
+    <!-- DAO接口所在包名，Spring会自动查找其下的类并注入到Spring的容器中 -->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="basePackage" value="com.zt.dao"/>
+        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
+    </bean>
+
+    <!-- 自动扫描与装配dao-->
+    <context:component-scan base-package="com.zt.dao"/>
+
+
+
+</beans>

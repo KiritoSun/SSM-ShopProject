@@ -1,0 +1,23 @@
+.shop-pay{
+    position: absolute;
+    width: 800px;
+    height: 300px;
+    border-radius: 10px;
+    /*border: 1px solid #F0F0F0;*/
+    top: 195px;
+    left: 80px;
+    color: #fff;
+}
+.shop-pay table{
+    position: relative;
+    top: 15px;
+    color: #ffffff;
+    font-size: 14px;
+}
+.shop-order table tr td img{
+    position: relative;
+    margin-left: 40px;
+}
+.payfoot{
+    vertical-align:middle;
+}

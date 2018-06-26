@@ -1,0 +1,32 @@
+body{
+    background-color: #F8F8F8;
+}
+.panel-body-left{
+    position: relative;
+    background-color: #F0F8FF;
+    width: 17%;
+    height: 100%;
+    float: left;
+}
+.list-group{
+    position: relative;
+    height: 100%;
+}
+.panel-body-right{
+    position: relative;
+    background-color: #fff;
+    width: 83%;
+    height: 100%;
+    float: left;
+}
+.panel-body-right-bottom{
+    position: relative;
+    width: 100%;
+}
+.panel-footer p{
+    font-size: 10px;
+    color: #999;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}

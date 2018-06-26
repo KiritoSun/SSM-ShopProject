@@ -1,0 +1,23 @@
+body{
+	background-color: #F8F8F8;
+}
+#panel{
+	position:relative;
+	top: 100px;
+	width: 32%;
+	margin: 0 auto;
+}
+#panel-head{
+	height: 65px;
+}
+#panel-title{
+	margin:0 auto;
+	line-height: 40px;
+}
+#panel-body{
+	width: 80%;
+	margin: 0 auto;
+}
+input[name='submit']{
+	width: 100%;
+}

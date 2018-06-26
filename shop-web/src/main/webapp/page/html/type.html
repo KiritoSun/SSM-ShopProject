@@ -1,0 +1,31 @@
+<%@ page import="java.io.*,java.util.*,java.sql.*"%>
+<%@ page import="javax.servlet.http.*,javax.servlet.*" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/sql" prefix="sql"%>
+<%--连接数据库--%>
+<sql:setDataSource var="snapshot" driver="com.mysql.jdbc.Driver"
+                   url="jdbc:mysql://localhost:3306/shop?useUnicode=true&characterEncoding=utf-8"
+                   user="root"  password="199761"/>
+<sql:query dataSource="${snapshot}" var="result">
+    SELECT * from sort;
+</sql:query>
+<!-- xx栏 -->
+<div class="shop-recommend">
+    <div class="shop-recommend-title">
+        <span>${type}部分</span>
+    </div>
+    <div class="shop-recommend-body">
+        <c:forEach var="row" items="${result.rows}">
+            <div class="shop-item" id="${row.id}">
+                <div class="shop-item-img">
+                    <img src="${row.img}" width="146" height="148"/>
+                </div>
+                <div class="shop-item-title">
+                    <c:out value="${row.title}"/>
+                </div>
+                <div class="shop-item-info">
+                    <c:out value="${row.info}"/>
+                </div>
+            </div>
+        </c:forEach>
+    </div>
+</div>

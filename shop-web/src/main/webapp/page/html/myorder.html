@@ -1,0 +1,30 @@
+<c:set var="list" value="${sessionScope.orderv}"/>
+<!-- xx栏 -->
+<div class="shop-order">
+    <table class="table table-bordered">
+        <thead class="alert-info">
+        <th>订单编号</th>
+        <th>购买商品</th>
+        <th>总价</th>
+        <th>详情</th>
+        <th>操作</th>
+        </thead>
+        <tbody>
+        <c:forEach var="order" items="${list}">
+            <tr id="${order.rid}">
+                <td name="id">
+                    <c:out value="${order.rid}"/>
+                </td>
+                <td name="names">
+                    <c:forEach items="${order.names}" var="name">
+                        <p value="${name}"><c:out value="${name}"/></p>
+                    </c:forEach>
+                </td>
+                <td name="price"><c:out value="${order.price}"/></td>
+                <td name="info">订单详情</td>
+                <td><input type="button" name="delete_order" class="btn btn-danger" value="取消订单"/></td>
+            </tr>
+        </c:forEach>
+        </tbody>
+    </table>
+</div>

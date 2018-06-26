@@ -1,0 +1,78 @@
+.shop-login{
+	position: absolute;
+	width: 320px;
+	height: 330px;
+	border: 1px solid #F0F0F0;
+	border-radius: 15px;
+	right: 90px;
+	top: 120px;
+}
+.shop-sub-title{
+	position: absolute;
+	font-weight: 600;
+	font-style: italic;
+	top: 70px;
+	left: 270px;
+	color: #ffffff;
+}
+.shop-login-png img[name="png1"]{
+	position: absolute;
+	left: 95px;
+	top: 220px;
+}
+.shop-login-png img[name="png2"]{
+	position: absolute;
+	left: 340px;
+	top: 180px;
+}
+.shop-login input[name="user"]{
+	position: relative;
+	width: 230px;
+	height: 35px;
+	margin: 0;
+	/*border: 1px solid #ffffff;
+	border-top-left-radius: 5px; 
+	border-bottom-left-radius: 5px;
+	padding-left: 45px; 
+	color: #ffffff;*/
+	margin-top: 45px;
+	margin-left: 38px;
+}
+.shop-login input[name="password"]{
+	position: relative;
+	width: 230px;
+	height: 35px;
+	margin: 0;
+	/*border: 1px solid #ffffff;
+	border-top-left-radius: 5px; 
+	border-bottom-left-radius: 5px;
+	padding-left: 45px; 
+	color: #ffffff;*/
+	margin-top: 30px;
+	margin-left: 38px;
+}
+.shop-login img[name="user2"]{
+	position: absolute;
+	left: 38px;
+	top: 92px;
+} 
+.shop-login img[name="pass"]{
+	position: absolute;
+	left: 38px;
+	top: 158px;
+} 
+.shop-login input[name="submit"]{
+	position: relative;
+	width: 230px;
+	height: 36px;
+	margin: 0;
+	margin-top: 30px;
+	margin-left: 38px;
+}
+.shop-login a{
+	position: relative;
+	margin-left: 40%;
+	color: white;
+	font-size: 12px;
+	cursor: pointer;
+}

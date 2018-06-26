@@ -1,0 +1,45 @@
+.content{
+    margin-left: 34px;
+    margin-top: -10px;
+}
+.box{
+    width: 190px;
+    height: 30px;
+    border:1px solid #ccc;
+    margin-top: 5px;
+    line-height: 30px;
+}
+.box input.paw{
+    width: 30px;
+    height: 20px;
+    line-height: 20px;
+    margin-left: -10px;
+    margin-top: 5px;
+    border:none;
+    border-right: 1px dashed #ccc;
+    text-align: center;
+}
+.box  input.paw:nth-child(1){
+    margin-left: 0;
+}
+.content .box .pawDiv:nth-child(6) input.paw{
+    border: none;
+}
+.content .box input.paw:focus{outline:0;}
+.content .box .pawDiv{
+    display: inline-block;
+    line-height: 30px;
+    width: 31px;
+    height: 31px;
+    margin-top: -2px;
+    float: left;
+}
+.point{
+    font-size: 14px;
+    color: #ccc;
+    margin: 5px 0;
+}
+.errorPoint{
+    color: red;
+    display: none;
+}

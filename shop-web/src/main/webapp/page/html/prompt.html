@@ -1,0 +1,140 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="/static/css/paydialog.css"/>
+    <script type="text/javascript" src="/static/js/style/paydialog.js"></script>
+</head>
+<!-- 提示对话框 -->
+<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" id="myModal">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">提示</h4>
+            </div>
+            <div class="modal-body">
+                <span id="dialog-info"></span>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">确定</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 提示对话框2 -->
+<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" id="myModal2">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel2">提示</h4>
+            </div>
+            <div class="modal-body">
+                <span id="dialog-info2">操作成功！</span>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" id="toindex">回到首页</button>
+                <button type="button" class="btn btn-default" id="tologin">前往登录</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--支付框-->
+<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" id="myModal3">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-header alert alert-info">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel3">
+                    <img src="/static/img/pay.png" width="30" height="30"/>
+                    支付框
+                </h4>
+            </div>
+            <div class="modal-body center-block">
+                <div class="content">
+                    <div class="box"></div>
+                    <div class="point">请输入6位数字密码</div>
+                    <div class="errorPoint">请输入数字！</div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="pay-restart" class="btn btn-default">取消</button>
+                &nbsp;&nbsp;&nbsp;
+                <button id="pay-submit" class="btn btn-primary getPasswordBtn">确定</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--支付成功-->
+<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" id="myModal4">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-header alert alert-success">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel4">
+                    提示
+                </h4>
+            </div>
+            <div class="modal-body center-block">
+                <div class="center-block"><img src="/static/img/success.png" width="30" height="30"/>
+                    &nbsp;&nbsp;&nbsp;支付成功！</div>
+            </div>
+            <div class="modal-footer">
+                <input type="button" name="cancel1" class="btn btn-default" value="继续" />
+            </div>
+        </div>
+    </div>
+</div>
+<!--支付失败-->
+<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" id="myModal5">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-header alert alert-danger">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel5">
+                    提示
+                </h4>
+            </div>
+            <div class="modal-body center-block">
+                <div class="center-block"><img src="/static/img/error.png" width="30" height="30"/>
+                    &nbsp;&nbsp;&nbsp;支付失败！</div>
+            </div>
+            <div class="modal-footer">
+                <input type="button" name="cancel2" class="btn btn-default" value="继续" />
+            </div>
+        </div>
+    </div>
+</div>
+<!--订单详情-->
+<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" id="myModal6">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel6">
+                    <img src="/static/img/order.png" width="24" height="24"/>
+                    &nbsp;&nbsp;订单详情
+                </h4>
+            </div>
+            <div class="modal-body">
+                <div>订单编号：<span id="order-rid"></span></div><br/>
+                <div>收货人：<span id="order-cname"></span></div><br/>
+                <div>收获地址：<span id="order-address"></span></div><br/>
+                <table class="table table-bordered" style="font-size: 14px;">
+                    <thead>
+                    <th>
+                        商品列表
+                    </th>
+                    </thead>
+                    <tbody>
+                    <tr id="order-names">
+
+                    </tr>
+                    </tbody>
+                </table>
+                <div>总价格：<span id="order-price"></span></div>
+            </div>
+            <div class="modal-footer">
+                <input type="button" name="cancel3" class="btn btn-default" value="关闭" />
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,45 @@
+<div class="panel-body-right-top">
+    <ul name="goods">
+        <li name="add"><img src="/static/img/add.png" width="20" height="20"/>&nbsp;&nbsp;添加字段</li>
+        <li name="delete"><img src="/static/img/remove.png" width="20" height="20"/>&nbsp;&nbsp;删除字段</li>
+        <li name="update"><img src="/static/img/update.png" width="20" height="20"/>&nbsp;&nbsp;修改字段</li>
+        <li name="refresh"><img src="/static/img/refresh.png" width="20" height="20"/>&nbsp;&nbsp;刷新</li>
+    </ul>
+</div>
+<sql:query dataSource="${snapshot}" var="result">
+    SELECT * from goods;
+</sql:query>
+<table class="table table-bordered table-striped table-hover">
+    <thead>
+    <tr class="alert-info">
+        <td>选择</td>
+        <td>编号</td>
+        <td>图片地址</td>
+        <td>标题</td>
+        <td>详情</td>
+        <td>名称</td>
+        <td>价格</td>
+        <td>库存</td>
+        <td>参数</td>
+        <td>类型</td>
+        <td>权重</td>
+    </tr>
+    </thead>
+    <tbody>
+    <c:forEach items="${result.rows}" var="row">
+        <tr id="${row.id}">
+            <td><input type="checkbox" name="check"/></td>
+            <td name="id"><c:out value="${row.id}"/></td>
+            <td name="img"><c:out value="${row.img}"/></td>
+            <td name="title"><c:out value="${row.title}"/></td>
+            <td name="info"><c:out value="${row.info}"/></td>
+            <td name="name"><c:out value="${row.name}"/></td>
+            <td name="price"><c:out value="${row.price}"/></td>
+            <td name="stock"><c:out value="${row.stock}"/></td>
+            <td name="para"><c:out value="${row.para}"/></td>
+            <td name="type"><c:out value="${row.type}"/></td>
+            <td name="weight"><c:out value="${row.weight}"/></td>
+        </tr>
+    </c:forEach>
+    </tbody>
+</table>

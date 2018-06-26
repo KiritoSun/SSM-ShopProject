@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 设置为IUserDao接口方法提供sql语句配置 -->
+<mapper namespace="com.zt.dao.CustomDao">
+    <select id="selectCustom" resultType="custom" parameterType="String">
+        SELECT * FROM custom WHERE cname = #{cname}
+    </select>
+    <insert id="insertCustom" parameterType="custom">
+        INSERT INTO custom VALUES (#{cname},#{password},#{name},#{phone},#{address},#{question},#{answer})
+    </insert>
+    <update id="updatePassword">
+        UPDATE custom SET password = #{password} WHERE cname = #{cname}
+    </update>
+    <delete id="deleteCustom" parameterType="String">
+        DELETE FROM custom WHERE cname=#{cname}
+    </delete>
+</mapper>
