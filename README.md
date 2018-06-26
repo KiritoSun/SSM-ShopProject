@@ -8,4 +8,5 @@
 5. shop-service模块负责存放项目的业务逻辑代码。
 6. shop-dao模块负责存放项目的mybatis数据库操作代码。
 ### 项目相关技术：
-1. 
+1. 前端采用html,css,javascript语言,运用bootstrap和jquery框架,并使用ajax技术向后台实现异步数据交互。
+2. 后台使用spring+spring mvc+mybatis框架。
