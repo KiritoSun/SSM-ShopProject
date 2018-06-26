@@ -13,5 +13,5 @@
 3. jsp页面使用jstl标签库，动态生成部分页面。
 4. 后台使用spring+spring mvc+mybatis框架。
 ### 项目截图展示：
-1. 主界面：
+1. 主界面：<br/>
   ![Image text](https://github.com/KiritoSun/SSM-ShopProject/blob/master/ShopImg/index.JPG?raw=true)
