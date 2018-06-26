@@ -7,3 +7,5 @@
 4. shop-controller模块负责存放项目的控制器代码。
 5. shop-service模块负责存放项目的业务逻辑代码。
 6. shop-dao模块负责存放项目的mybatis数据库操作代码。
+### 项目相关技术：
+1. 
