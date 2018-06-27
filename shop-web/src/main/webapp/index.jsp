@@ -14,7 +14,7 @@
     <%@include file="/page/html/menu.html"%>
     <%@include file="/page/html/nav.html"%>
     <%@include file="/page/html/user.html"%>
-    <%@include file="/page/html/recommend.html"%>
+    <%@include file="/page/html/index.html"%>
     <%@include file="/page/html/foot.html"%>
     <%@include file="page/html/prompt.html"%>
 </body>

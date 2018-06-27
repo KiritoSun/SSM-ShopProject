@@ -4,7 +4,6 @@
 <head>
     <title>商品列表项 - 在线购物系统</title>
     <%@include file="html/head.html"%>
-    <link rel="stylesheet" type="text/css" href="/static/css/index.css"/>
     <link rel="stylesheet" type="text/css" href="/static/css/goodsList.css"/>
     <link rel="stylesheet" type="text/css" href="/static/css/type.css"/>
 </head>

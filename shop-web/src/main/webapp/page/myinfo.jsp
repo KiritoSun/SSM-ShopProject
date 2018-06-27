@@ -5,7 +5,6 @@
     <title>信息修改 - 在线购物系统</title>
     <meta http-equiv="content-type" content="text/html;charset=utf-8">
     <%@include file="html/head.html"%>
-    <link rel="stylesheet" type="text/css" href="/static/css/index.css"/>
     <link rel="stylesheet" type="text/css" href="/static/css/myinfo.css"/>
     <script type="text/javascript" src="/static/js/style/myinfo.js"></script>
     <script type="text/javascript" src="/static/js/ajax/info.js"></script>

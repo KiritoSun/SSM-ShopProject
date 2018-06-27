@@ -5,7 +5,6 @@
     <title>购物车 - 在线购物系统</title>
     <%@include file="html/head.html"%>
     <link rel="stylesheet" type="text/css" href="/static/css/mycart.css"/>
-    <link rel="stylesheet" type="text/css" href="/static/css/index.css"/>
     <script type="text/javascript" src="/static/js/style/mycart.js"></script>
     <script type="text/javascript" src="/static/js/ajax/cart.js"></script>
 </head>

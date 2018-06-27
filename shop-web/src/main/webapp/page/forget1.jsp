@@ -3,7 +3,6 @@
 <head>
     <title>忘记密码 - 在线购物系统</title>
     <%@include file="html/head.html"%>
-    <link rel="stylesheet" type="text/css" href="/static/css/index.css"/>
     <link rel="stylesheet" type="text/css" href="/static/css/login.css"/>
     <link rel="stylesheet" type="text/css" href="/static/css/register.css"/>
     <link rel="stylesheet" type="text/css" href="/static/css/forget.css"/>

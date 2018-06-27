@@ -7,6 +7,22 @@
 	right: 90px;
 	top: 120px;
 }
+.shop-login-title{
+	position: relative;
+	width: 100%;
+	height: 40px;
+	table-layout: fixed;
+	border-bottom: 1px solid #F0F0F0;
+}
+.shop-login-title span{
+	position: relative;
+	color: #F0F0F0;
+	border-left: 5px solid #FF6633;
+	padding-left: 15px;
+	margin-left: 15px;
+	top: 8px;
+	font-weight: bolder;
+}
 .shop-sub-title{
 	position: absolute;
 	font-weight: 600;
