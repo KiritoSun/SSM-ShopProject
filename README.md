@@ -15,7 +15,7 @@
 ### 项目截图展示：
 1. 主界面：
 ***
-  ![Image text](https://github.com/KiritoSun/SSM-ShopProject/blob/master/ShopImg/index.JPG?raw=true)
+  ![Image text](https://github.com/KiritoSun/SSM-ShopProject/blob/master/ShopImg/newindex.jpg?raw=true)
 2. 登录界面：
 ***
   ![Image text](https://github.com/KiritoSun/SSM-ShopProject/blob/master/ShopImg/login.JPG?raw=true)
