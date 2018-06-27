@@ -10,7 +10,7 @@
         INSERT INTO sort VALUES
         <foreach collection="list" item="item" index="index" separator=",">
             (
-            #{item.id},#{item.img},#{item.title},#{item.info}
+            #{item.title},#{item.info},#{item.img}
             )
         </foreach>
     </insert>

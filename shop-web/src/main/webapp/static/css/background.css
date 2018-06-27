@@ -216,3 +216,11 @@ input::-webkit-input-placeholder{
     color: #D8D8D8;
     font-size: 12px;
 }
+.shop-null{
+    position: relative;
+    color: #D8D8D8;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 10%;
+    margin-left: 40%;
+}

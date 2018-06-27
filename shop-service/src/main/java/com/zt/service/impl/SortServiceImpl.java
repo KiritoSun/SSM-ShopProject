@@ -23,7 +23,7 @@ public class SortServiceImpl implements SortService {
             sortDao.clearSort();
             String t = TypeUtil.changeType(type);
             List<goods> list = goodsDao.selectGoodsByType(t);
-            sortDao.insertSort(list);
+            //sortDao.insertSort(list);
         }catch (Exception e){
             e.printStackTrace();
             return false;

@@ -17,11 +17,11 @@ public class GoodsListServiceImpl implements GoodsListService {
     private GoodsListDao goodsListDao;
 
     @Override
-    public boolean goodsListService(String id) {
+    public boolean goodsListService(String title) {
         try{
             goodsListDao.clearGoodslist();
-            goods p = goodsDao.selectGoodsById(id);
-            goodsListDao.insertGoodslist2(p);
+            List<goods> list = goodsDao.selectGoodsByTitle(title);
+            goodsListDao.insertGoodslist(list);
         }catch (Exception e){
             e.printStackTrace();
             return false;

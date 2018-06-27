@@ -7,6 +7,8 @@ import java.util.List;
 public interface GoodsDao {
     // 获取指定类型的商品
     public List<goods> selectGoodsByType(String type);
+    // 获取指定title的商品
+    public List<goods> selectGoodsByTitle(String title);
     // 取出所有的商品
     public List<goods> selectGoodsAll();
     // 根据id查询商品

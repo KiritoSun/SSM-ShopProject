@@ -18,18 +18,26 @@
 			</span>
     </div>
     <div class="shop-goodsList-body">
-        <c:forEach var="row" items="${result.rows}">
-            <div class="shop-item2" id="${row.id}">
-                <div class="shop-item2-img">
-                    <img src="${row.img}" width="146" height="148"/>
-                </div>
-                <div class="shop-item2-price">
-                    ￥ <c:out value="${row.price}"/>
-                </div>
-                <div class="shop-item2-name">
-                    <c:out value="${row.name}"/>
-                </div>
+        <c:if test="${empty result.rows}">
+            <div class="shop-null">
+                <img src="/static/img/null.png" width="30" height="30"/>
+                &nbsp;&nbsp;&nbsp;抱歉！没有你要查找的商品！
             </div>
-        </c:forEach>
+        </c:if>
+        <c:if test="${!empty result.rows}">
+            <c:forEach var="row" items="${result.rows}">
+                <div class="shop-item2" id="${row.id}">
+                    <div class="shop-item2-img">
+                        <img src="${row.img}" width="146" height="148"/>
+                    </div>
+                    <div class="shop-item2-price">
+                        ￥ <c:out value="${row.price}"/>
+                    </div>
+                    <div class="shop-item2-name">
+                        <c:out value="${row.name}"/>
+                    </div>
+                </div>
+            </c:forEach>
+        </c:if>
     </div>
 </div>

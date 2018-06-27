@@ -6,6 +6,9 @@
     <select id="selectGoodsByType" parameterType="String" resultType="com.zt.pojo.goods">
         SELECT * FROM goods WHERE type LIKE #{type}
     </select>
+    <select id="selectGoodsByTitle" parameterType="String" resultType="com.zt.pojo.goods">
+        SELECT * FROM goods WHERE title LIKE #{title}
+    </select>
     <select id="selectGoodsAll" resultType="com.zt.pojo.goods">
         SELECT * FROM goods
     </select>

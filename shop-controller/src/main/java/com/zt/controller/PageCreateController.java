@@ -29,6 +29,8 @@ public class PageCreateController {
     @Resource
     private SortService sortService;
     @Resource
+    private GoodsIndexService goodsIndexService;
+    @Resource
     private RecommendService recommendService;
     @Resource
     private GoodsListService goodsListService;
@@ -49,7 +51,7 @@ public class PageCreateController {
         try{
             out = response.getWriter();
             session = request.getSession();
-            sortService.sortService(action);
+            goodsIndexService.goodsindexService(action);
             session.setAttribute("type",TypeUtil.changeType(action));
             out.print("success");
             out.flush();
@@ -77,12 +79,12 @@ public class PageCreateController {
 
     // 请求打开商品列表
     @RequestMapping(value = "/goodslistPage.action",method = RequestMethod.POST)
-    public void goodslistPage(@RequestParam(value = "id") String id,
+    public void goodslistPage(@RequestParam(value = "title") String title,
                               HttpServletResponse response){
         PrintWriter out = null;
         try{
             out = response.getWriter();
-            goodsListService.goodsListService(id);
+            goodsListService.goodsListService(title);
             out.print("success");
             out.flush();
         }catch (IOException e){

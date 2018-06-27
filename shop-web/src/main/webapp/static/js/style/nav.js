@@ -24,8 +24,8 @@ $(function () {
 
     // 打开商品列表页面
     $(document).on('click','.shop-item',function(){
-        var id = $(this).attr("id");
-        var data = {"id":id};
+        var title = $(this).attr("id");
+        var data = {"title":title};
         //createGoodsPage(data);
         createGoodslistPage(data);
     });
