@@ -5,6 +5,7 @@
     <title>在线购物系统</title>
     <%@include file="/page/html/head.html"%>
     <link rel="stylesheet" type="text/css" href="/static/css/index.css"/>
+    <script type="text/javascript" src="/static/js/ajax/init.js"></script>
     <script type="text/javascript" src="/static/js/style/index.js"></script>
 </head>
 <body>
