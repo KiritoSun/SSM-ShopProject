@@ -22,16 +22,22 @@
 3. 注册界面：
 ***
   ![Image text](https://github.com/KiritoSun/SSM-ShopProject/blob/master/ShopImg/register.JPG?raw=true)
-4. 购物车界面：
+4. 分类界面：
+***
+  ![Image text](https://github.com/KiritoSun/SSM-ShopProject/blob/master/ShopImg/sort.JPG?raw=true)
+5. 商品列表界面：
+***
+  ![Image text](https://github.com/KiritoSun/SSM-ShopProject/blob/master/ShopImg/goodslist.JPG?raw=true)
+6. 购物车界面：
 ***
   ![Image text](https://github.com/KiritoSun/SSM-ShopProject/blob/master/ShopImg/cart.JPG?raw=true)
-5. 支付界面：
+7. 支付界面：
 ***
   ![Image text](https://github.com/KiritoSun/SSM-ShopProject/blob/master/ShopImg/payment.JPG?raw=true)
-6. 订单界面：
+8. 订单界面：
 ***
   ![Image text](https://github.com/KiritoSun/SSM-ShopProject/blob/master/ShopImg/order.JPG?raw=true)
-7. 后台管理界面：
+9. 后台管理界面：
 ***
   ![Image text](https://github.com/KiritoSun/SSM-ShopProject/blob/master/ShopImg/admin.JPG?raw=true)
 
