@@ -1,4 +1,4 @@
-# SSM-ShopProject(未完成)
+# SSM-ShopProject
 这是一个基于ssm框架的购物系统
 ### 项目结构描述：
 1. 该项目中有五个子模块。
